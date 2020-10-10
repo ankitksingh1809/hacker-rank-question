@@ -16,7 +16,7 @@ int main()
         for(int k = 0; k < l; k++){
             sum += p[k]*p[k]*p[k];
         }
-        if(sum == i){
+        if(sum ==i){
             printf("%d\n", i);
             }
     i++;
