@@ -1,14 +1,19 @@
 #include <stdio.h>
-int fibonacci(int n){
-    int fibonacci1[25];
+
+int fibonacci1[25];
+
+void fibonacci(int n){
     fibonacci1[0] = 1;
     fibonacci1[1] = 1;
-    fibonacci1[n - 1] = fibonacci(n - 2) + fibonacci(n  - 3);
-    return fibonacci1[n - 1];
+    for(int i = 2; i < n; i++){
+         fibonacci1[i] = fibonacci1[i - 1] + fibonacci1[i- 2];
+    }
+    
 }
 int main() {
-    for(int i = 1; i<= 25; i++){
-        printf("%d", fibonacci(i));
+    fibonacci(25);
+    for(int i = 0; i<= 24; i++){
+        printf("%d\n", fibonacci1[i]);
     }
     return 0;
 }
