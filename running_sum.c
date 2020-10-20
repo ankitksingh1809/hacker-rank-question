@@ -2,7 +2,7 @@
 
 int rs(int n){
     int rs1;
-    if(n = 1){
+    if(n == 1){
         rs1 = 1;
     }else{
         rs1 = rs(n - 1) + n;
