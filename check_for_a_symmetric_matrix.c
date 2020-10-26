@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void checkSym(int **p){
+void checkSym(int p[3][3]){
     int sum;
     for(int i = 0; i < 3; i++){
         for(int j = 0; j < 3; j++){
